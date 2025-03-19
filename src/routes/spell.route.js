@@ -3,7 +3,7 @@ import {
   createSpellWord,
   getAllSpellWords,
   updateSpellWord,
-} from "../controllers/spellWord.controller.js";
+} from "../controllers/spell.controller.js";
 
 const router = express.Router();
 

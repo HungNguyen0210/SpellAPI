@@ -5,7 +5,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import connectDB from "./config/db.js";
 import imageRoutes from "./routes/image.routes.js";
-import SpellWordRoutes from "./routes/spellWord.route.js";
+import SpellWordRoutes from "./routes/spell.route.js";
 
 dotenv.config();
 connectDB();
