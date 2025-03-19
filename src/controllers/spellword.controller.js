@@ -1,5 +1,5 @@
 import Image from "../models/image.model.js";
-import SpellWord from "../models/spellword.model.js";
+import SpellWord from "../models/spellWord.model.js";
 
 export const createSpellWord = async (req, res) => {
   try {
