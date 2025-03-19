@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const SpellWordSchema = new mongoose.Schema({
-  letter: { type: String, required: true, unique: true },
+  letter: { type: String, required: true },
   example: { type: String, required: true },
   images: {
     type: mongoose.Schema.Types.ObjectId,

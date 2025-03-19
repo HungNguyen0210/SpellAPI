@@ -11,7 +11,13 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://babyspell.vercel.app/", // Thay bằng domain frontend thật
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
+  })
+);
 app.use(bodyParser.json());
 
 // Định nghĩa thư mục chứa tài nguyên tĩnh
