@@ -62,18 +62,3 @@ export const updateSpellWord = async (req, res) => {
     res.status(500).json({ error: "Lỗi server!" });
   }
 };
-
-export const deleteSpellWord = async (req, res) => {
-  try {
-    const { id } = req.params;
-    const spellWord = await SpellWord.findByIdAndDelete(id);
-
-    if (!spellWord) {
-      return res.status(404).json({ error: "Từ không tồn tại!" });
-    }
-
-    res.json({ message: "Xóa thành công!" });
-  } catch (error) {
-    res.status(500).json({ error: "Lỗi server!" });
-  }
-};
